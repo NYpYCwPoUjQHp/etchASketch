@@ -9,7 +9,7 @@
 
     <h1>Etch-a-Sketch</h1>
 
-<div id="square-container">
+<div class="square-container">
 
 
 
@@ -28,13 +28,34 @@
 
 <script>
 
-const container = document.querySelector('#square-container');
+function makeDiv() {
+const container = document.querySelector('.square-container');
 const content = document.createElement('div');
 content.classList.add('square');
 
 container.appendChild(content);
 
+const container2 = document.querySelector('.square');
+const content2 = document.createElement('div');
+content2.classList.add('content');
+content.appendChild(content2);}
+// content2.after(container2);}
 
+// const container3= document.querySelector('.square-container');
+// const content3 = document.createElement('div');
+// content3.classList.add('square');
+
+// container3.appendChild(content3);
+
+// const container4 = document.getElementsByClassName('square');
+// const content4 = document.createElement('div');
+// content4.classList.add('content');
+
+// container4.appendChild(content4);
+
+
+makeDiv();
+makeDiv();
 
     </script>
     
