@@ -9,18 +9,30 @@
 
     <h1>Etch-a-Sketch</h1>
 
-   
-       
-            <div id="container" ></div>
-                
-            </div>
+<div id="square-container">
 
+
+
+
+
+
+
+
+
+</div> 
+       
         
 
         
 </body>
 
 <script>
+
+const container = document.querySelector('#square-container');
+const content = document.createElement('div');
+content.classList.add('square');
+
+container.appendChild(content);
 
 
 
